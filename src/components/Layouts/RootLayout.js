@@ -13,7 +13,7 @@ import { useState } from "react";
 const RootLayout = ({ children }) => {
   const [open, setOpen] = useState(false);
   const handleMenuClick = (e) => {
-    if (e.key === "9") {
+    if (e.key === "8") {
       setOpen(false);
     }
   };
@@ -34,7 +34,7 @@ const RootLayout = ({ children }) => {
       key: "3",
     },
     {
-      label: "Power Supply Unit",
+      label: "Power Supply",
       key: "4",
     },
     {
@@ -46,16 +46,12 @@ const RootLayout = ({ children }) => {
       key: "6",
     },
     {
-      label: "Casing",
+      label: "Graphics Card",
       key: "7",
     },
     {
-      label: "Keyboard",
+      label: "Casing",
       key: "8",
-    },
-    {
-      label: "Mouse",
-      key: "9",
     },
   ];
 
@@ -90,7 +86,7 @@ const RootLayout = ({ children }) => {
           >
             <a onClick={(e) => e.preventDefault()}>
               <Space>
-                Component
+                Components
                 <DownOutlined />
               </Space>
             </a>
